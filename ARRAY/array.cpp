@@ -39,5 +39,70 @@
 
 // }
 
+
+//second max
+
+
+// #include <iostream>
+// #include <climits>  // for INT_MIN
+
+// using namespace std;
+
+// int main() {
+//     int arr[7] = {1, 2, 3, 45, 35, 48, 10};
+//     int firstMax = INT_MIN;
+//     int secondMax = INT_MIN;
+
+//     for (int i = 0; i < 7; i++) {
+//         if (arr[i] > firstMax) {
+//             secondMax = firstMax;
+//             firstMax = arr[i];
+//         } else if (arr[i] > secondMax && arr[i] != firstMax) {
+//             secondMax = arr[i];
+//         }
+//     }
+
+//     cout <<firstMax << endl;
+//     cout <<secondMax << endl;
+
+//     return 0;
+// }
+
+////////////////////////////////////////
+// #include <iostream>
+// #include <vector>
+// #include <climits>
+// using namespace std;
+
+// class Solution {
+//   public:
+//     int getSecondLargest(vector<int> &arr) {
+//         int n = arr.size();
+//         if (n < 2) return -1;   // not enough elements
+
+//         // largest element
+//         int ans = INT_MIN;
+//         for (int i = 0; i < n; i++) {
+//             if (arr[i] > ans) {
+//                 ans = arr[i];
+//             }
+//         }
+
+//         // second largest
+//         int second = INT_MIN;
+//         for (int i = 0; i < n; i++) {
+//             if (arr[i] != ans) {
+//                 second = max(second, arr[i]);
+//             }
+//         }
+
+//         // if no second largest found
+//         if (second == INT_MIN) return -1;
+//         return second;
+//     }
+// };
+
+
+
    
 
